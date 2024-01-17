@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/FL01"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/settin"
+        android:gravity="right|top"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/div01"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/transparent" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:id="@+id/closePlanet"
+        android:background="@drawable/close"
+        app:layout_constraintRight_toRightOf="@id/FL01"
+        app:layout_constraintTop_toTopOf="@id/FL01"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintLeft_toRightOf="@id/div01"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/planet_music_on"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/on"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <ImageView
+            android:id="@+id/planet_music_off"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/off"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/planet_sounds_on"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/on"
+            app:layout_constraintTop_toBottomOf="@id/planet_music_on"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <ImageView
+            android:id="@+id/planet_sounds_off"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/off"
+            app:layout_constraintTop_toBottomOf="@id/planet_music_off"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:visibility="invisible"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

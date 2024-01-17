@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/win_splash">
+    
+    <LinearLayout
+        android:id="@+id/LL03"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center|bottom"
+        android:background="@drawable/win_splash"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/planet_win_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sev_seg"
+            android:textSize="69dp"
+            android:layout_marginBottom="52dp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
